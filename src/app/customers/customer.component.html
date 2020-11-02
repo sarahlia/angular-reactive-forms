@@ -62,12 +62,7 @@
                    formControlName="email"
                    [ngClass]="{'is-invalid': emailMessage }" />
             <span class="invalid-feedback">
-              <span *ngIf="customerForm.get('emailGroup.email').errors?.required">
                 {{ emailMessage }}
-              </span>
-              <span *ngIf="customerForm.get('emailGroup.email').errors?.email">
-                Please enter a valid email address.
-              </span>
             </span>
           </div>
         </div>
